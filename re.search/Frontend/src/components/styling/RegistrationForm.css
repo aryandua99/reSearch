@@ -1,0 +1,155 @@
+body {
+    height: 100vh;
+    background: linear-gradient(#2A00B7, #43006C);
+    /* background: linear-gradient(#6d5ab7, #141742); */
+    /* background: #141742; */
+    /* Need to add the two lines below to avoid the following: https://tinyurl.com/5n6jk4ud */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* body::before {
+  content: "";
+  position:fixed;
+  width: 50%; 
+  height: 100vh;
+  background: white; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1; 
+} */
+
+/* .logo img{
+  height: 512px;
+  width: 512px;
+} */
+
+.centering-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: transparent; /* Background color of the entire viewport, adjust as needed */
+}
+
+.reg_form_container {
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    justify-content: center;
+    width: 600px;
+    background: #ffffff;
+    padding-bottom: 30px;
+    border-radius: 15px; 
+    overflow: hidden;
+    transform: scale(.75);
+    transform-origin: 50% 50%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.text {
+  color: #3c009d;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.underline{
+  display: flex;
+  /* width: 61px; */
+  width: 250px;
+  height: 6px;
+  background:#3c009d;
+  border-radius: 9px;
+  margin-top: 15px;
+}
+
+.fields {
+  margin-top: 55px;
+  display: flex; 
+  flex-direction: column;
+  gap: 25px;
+}
+
+.field {
+  display: flex;
+  align-items: center; 
+  margin: auto;
+  width: 480px;
+  height: 80px;
+  background: #eaeaea;
+  border-radius: 46px;
+}
+
+.field img {
+  margin: 0px 30px;
+  width: 35px;
+  height: 35px;
+}
+
+.field input {
+  height: 50px;
+  width: 400px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px;
+  font-family: montreal;
+}
+
+.field select {
+  height: 80px;
+  width: 300px;
+  background: transparent;
+  border-radius: 36;
+  overflow: hidden;
+  border: none;
+  outline: none;
+  color: #797979;
+  font-size: 19px; 
+}
+
+.forgot-password{
+  padding-left: 62px;
+  margin-top: 27px;
+  color: #797979;
+  font-size: 18px;
+}
+
+.forgot-password span{
+  color: #4c00b4;
+  cursor: pointer;
+}
+
+.submit-container {
+  display: flex;
+  gap: 30px;
+  margin: 50px auto;
+  margin-bottom: 0px;
+}
+
+.submit-container button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 59px;
+  color: #fff;
+  background: #4c00b4;
+  /* background: #a543cf; */
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 600px;
+  cursor: pointer;
+}
+
+
+
