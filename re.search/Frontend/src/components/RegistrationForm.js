@@ -13,7 +13,6 @@ import uni_icon from './Assets/university.png';
 
 const RegistrationForm = () => {
     
-    // name, degree level, uni or comp, location or addy, major/minor, grad year, relevant coursework, bio, email, github/link/personal
     const handleSignUp = (event) => {
         event.preventDefault();
         const email = document.getElementById("email").value;
@@ -57,6 +56,7 @@ const RegistrationForm = () => {
                 <img src={logo2} alt=""/>
             </div> */}
             {/* In the CSS file, all of these inputs will be under the class name registration-form__input */}
+            
             <div className='centering-container'>
                 <div className='reg_form_container'>
                     <div className='header'>
