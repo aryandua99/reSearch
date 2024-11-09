@@ -1,0 +1,45 @@
+/* src/components/LandingDesign.css */
+
+
+.landing-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background: linear-gradient(135deg, #3b82f6, #9333ea);
+   color: white;
+   text-align: center;
+}
+
+
+.landing-title {
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+   font-weight: bold;
+}
+
+
+.button-container {
+   display: flex;
+   gap: 15px;
+}
+
+
+.landing-button {
+   padding: 12px 24px;
+   font-size: 1rem;
+   font-weight: bold;
+   color: #3b82f6;
+   background-color: white;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+
+.landing-button:hover {
+   background-color: #d1d5db;
+   transform: scale(1.05);
+}

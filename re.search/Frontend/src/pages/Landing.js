@@ -1,7 +1,10 @@
+import LandingDesign from '../components/LandingDesign';
+
+
 export function Landing() {
   return ( 
     <>
-      <h1>Landing</h1>
+      <LandingDesign/>
     </>
   );
 }
