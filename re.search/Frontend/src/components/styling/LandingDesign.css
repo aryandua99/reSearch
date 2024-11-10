@@ -1,43 +1,58 @@
-/* src/components/LandingDesign.css */
-
-
+/* Container to split the screen into two halves */
 .landing-container {
+   display: grid;
+   grid-template-columns: 1fr 1fr; /* Two equal halves */
+   height: 100vh;
+   color: white;
+}
+
+/* Left half background image */
+.landing-container::before {
+   content: "";
+   background: url('/Users/ipsita/Downloads/reSearch/re.search/Frontend/src/components/Assets/rlogo2opaque.jpg') center center / cover no-repeat; /* Adjust path if necessary */
+   grid-column: 1 / 2;
+   height: 100vh;
+   width: 100%;
+}
+
+/* Right half content */
+.landing-content {
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: center;
-   height: 100vh;
-   background: linear-gradient(135deg, #3b82f6, #9333ea);
-   color: white;
+   padding: 20px;
+   background: linear-gradient(#c4e0e5, #4CA1AF);
+   grid-column: 2 / 3;
    text-align: center;
 }
 
-
+/* Title styling */
 .landing-title {
    font-size: 2.5rem;
    margin-bottom: 20px;
    font-weight: bold;
+   color: white;
 }
 
-
+/* Button container styling */
 .button-container {
    display: flex;
    gap: 15px;
 }
 
-
+/* Button styling */
 .landing-button {
    padding: 12px 24px;
    font-size: 1rem;
    font-weight: bold;
-   color: #3b82f6;
+   color: #3f8590;
    background-color: white;
    border: none;
    border-radius: 8px;
    cursor: pointer;
    transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
 
 .landing-button:hover {
    background-color: #d1d5db;
