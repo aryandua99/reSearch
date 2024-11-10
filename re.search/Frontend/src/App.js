@@ -10,6 +10,7 @@ import { Landing } from './pages/Landing';
 import { Profile } from './pages/Profile';
 import { Signup } from './pages/Signup';
 
+
 const App = () => {
   return (
     <Router>

@@ -1,5 +1,7 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Ignore environment variables file to keep API keys safe
+.env
 
+# Other ignored files (already in your .gitignore)
 # dependencies
 /node_modules
 /.pnp
