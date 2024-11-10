@@ -1,49 +1,29 @@
 body {
-    height: 100vh;
-    background: linear-gradient(#c4e0e5, #4CA1AF);
-    /* background: linear-gradient(#6d5ab7, #141742); */
-    /* background: #141742; */
-    /* Need to add the two lines below to avoid the following: https://tinyurl.com/5n6jk4ud */
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-/* body::before {
-  content: "";
-  position:fixed;
-  width: 50%; 
   height: 100vh;
-  background: white; 
+  background: linear-gradient(#c4e0e5, #4CA1AF);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: -1; 
-} */
-
-/* .logo img{
-  height: 512px;
-  width: 512px;
-} */
+}
 
 .centering-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full viewport height */
-  background-color: transparent; /* Background color of the entire viewport, adjust as needed */
+  height: 100vh;
+  background-color: transparent;
 }
 
 .reg_form_container {
-    display: flex;
-    flex-direction: column;
-    /* margin: auto; */
-    justify-content: center;
-    width: 600px;
-    background: #ffffff;
-    padding-bottom: 30px;
-    border-radius: 15px; 
-    overflow: hidden;
-    transform: scale(.75);
-    transform-origin: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: scale(0.85);
 }
 
 .header {
@@ -52,7 +32,7 @@ body {
   align-items: center;
   gap: 2px;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .text {
@@ -61,118 +41,111 @@ body {
   font-weight: 600;
 }
 
-.underline{
+.underline {
   display: flex;
-  /* width: 61px; */
   width: 250px;
   height: 6px;
-  background:#3f8590;
+  background: #3f8590;
   border-radius: 9px;
   margin-top: 15px;
 }
 
 .fields {
-  margin-top: 55px;
-  display: flex; 
+  margin-top: 40px;
+  display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 20px;
 }
 
 .field {
   display: flex;
-  align-items: center; 
+  align-items: center;
   margin: auto;
   width: 480px;
-  height: 80px;
+  height: 60px;
   background: #eaeaea;
   border-radius: 46px;
+  padding: 0 20px;
 }
 
 .field img {
-  margin: 0px 30px;
-  width: 35px;
-  height: 35px;
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
 }
 
-.field input {
-  height: 50px;
-  width: 400px;
+.field input, .field select, .field textarea {
+  flex: 1;
   background: transparent;
   border: none;
   outline: none;
   color: #797979;
-  font-size: 19px;
-  font-family: montreal;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
 }
 
-.field select {
+.field textarea {
   height: 80px;
-  width: 300px;
-  background: transparent;
-  border-radius: 36;
-  overflow: hidden;
-  border: none;
-  outline: none;
-  color: #797979;
-  font-size: 19px; 
+  resize: none;
+  border-radius: 15px;
+  padding: 15px;
 }
 
-.forgot-password{
+.forgot-password {
   padding-left: 62px;
   margin-top: 27px;
   color: #797979;
   font-size: 18px;
 }
 
-.forgot-password span{
+.forgot-password span {
   color: #3f8590;
   cursor: pointer;
 }
 
 .submit-container {
   display: flex;
-  gap: 30px;
-  margin: 50px auto;
-  margin-bottom: 0px;
+  gap: 20px; /* Increase this value to add more space between buttons */
+  margin: 40px auto;
 }
 
-.submit-container button{
+.submit-container button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 220px;
-  height: 59px;
+  width: 150px;
+  height: 45px;
   color: #fff;
-  background:#3f8590;
-  /* background: #a543cf; */
-  border-radius: 50px;
-  font-size: 19px;
-  font-weight: 600px;
+  background: #3f8590;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
+
+.submit-container button:hover {
+  background: #2f6470;
+}
+
+
 
 .signup-redirect-text {
-   margin-top: 20px;
-   color: #3f8590; /* Updated text color */
-   font-size: 1.2rem;
-   text-align: center;
+  margin-top: 20px;
+  color: #3f8590;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
-/* Style for the clickable sign-up link */
 .signup-link {
-   color: #3f8590;
-   font-weight: bold;
-   cursor: pointer;
-   margin-left: 5px;
-   text-decoration: underline;
-   transition: color 0.3s ease;
+  color: #3f8590;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 5px;
+  text-decoration: underline;
+  transition: color 0.3s ease;
 }
 
 .signup-link:hover {
-   color: #2f6470;
+  color: #2f6470;
 }
-
-
-
-
-

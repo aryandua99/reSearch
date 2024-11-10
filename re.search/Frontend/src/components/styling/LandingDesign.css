@@ -9,7 +9,7 @@
 /* Left half background image */
 .landing-container::before {
    content: "";
-   background: url('/Users/ipsita/Downloads/reSearch/re.search/Frontend/src/components/Assets/rlogo2opaque.jpg') center center / cover no-repeat; /* Adjust path if necessary */
+   background: url('../Assets/rlogo2opaque.jpg') center center / cover no-repeat; /* Adjust path if necessary */
    grid-column: 1 / 2;
    height: 100vh;
    width: 100%;
